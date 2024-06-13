@@ -1,98 +1,169 @@
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Oswald|Permanent+Marker|Montserrat');
+/* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+  padding-top: 300px;
+  color: rgba(255, 255, 255, 0.493);
+}
+
+h2 {
+  font-size: 80px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.493);
+}
+
 body {
-  margin: 0;
-  background-color: #eee;
+  min-height: 100vh;
+  background: #F0F4FF;
+  background: /* top, transparent black */
+  linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), /* bottom, image */
+  url(images/jacksonville-skyline.jpg);
+  background-size: cover;
 }
 
-html, h1, h2, p {
-  font-family: 'Shadows Into Light', cursive;
-  color: DarkRed;
-  font-size: 24px;
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 85px;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  background: #161a2d;
+  padding: 25px 20px;
+  transition: all 0.4s ease;
 }
 
-main > div > article > section > header > h2 {
-  color: #668284;
-  font-size: 24px;
+.sidebar:hover {
+  width: 260px;
 }
 
-main > div > article > section > p {
-  font-size: 16px;
+.sidebar .sidebar-header {
+  display: flex;
+  align-items: center;
 }
 
-main > div > article > section > header > h2, 
-main > div > article > section p, 
-footer > div > nav > p {
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-  font-family: 'Oswald', sans-serif;
+.sidebar .sidebar-header img {
+  width: 42px;
+  border-radius: 50%;
 }
 
-main > div > article {
-  overflow: visible;
+.sidebar .sidebar-header h2 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 23px;
 }
 
-main > div > article > section {
-  margin-left: -200%;
-  width: 500%;
-  border-bottom: 3px solid #668284;
+.sidebar-links h4 {
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 10px 0;
+  position: relative;
 }
 
-main > div > article > section:last-child {
-  border-bottom: none;
+.sidebar-links h4 span {
+  opacity: 0;
 }
 
-header > div > h1 {
-  text-align: center;
-  font-size: 70px;
-  margin: 0;
-  font-family: 'Permanent Marker', cursive;
+.sidebar:hover .sidebar-links h4 span {
+  opacity: 1;
 }
 
-header > div > nav {
-  margin: 0 0 10px 10px;
+.sidebar-links .menu-separator {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(1);
+  transform: translateY(-50%);
+  background: #4f52ba;
+  transform-origin: right;
+  transition-delay: 0.2s;
 }
 
-header > div > nav > a {
-  padding: 0 15px 10px 20px;
-  font-size: 16px;
+.sidebar:hover .sidebar-links .menu-separator {
+  transition-delay: 0s;
+  transform: scaleX(0);
+}
+
+.sidebar-links {
+  list-style: none;
+  margin-top: 20px;
+  height: 80%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.sidebar-links::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-links li a {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 15px 10px;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  color: #493736;
+  transition: 0.2s ease;
 }
 
-header > div > nav a:hover {
-  color: #668284;
+.sidebar-links li a:hover {
+  color: #161a2d;
+  background: #fff;
+  border-radius: 4px;
 }
 
-nav,
-div {
-  width: 300px;
-  margin: auto;
+.user-account {
+  margin-top: auto;
+  padding: 12px 10px;
+  margin-left: -10px;
 }
 
-nav:after {
-  content: "";
-  display: table;
-  clear: both;
+.user-profile {
+  display: flex;
+  align-items: center;
+  color: #161a2d;
 }
 
-main > div > article > section p {
-  color: #493736;
+.user-profile img {
+  width: 42px;
+  border-radius: 50%;
+  border: 2px solid #fff;
 }
 
-main > div {
-  border: 3px solid #668284;
-  padding: 10px;
-  background-color: #B9D7D9;
-  overflow: hidden;
+.user-profile h3 {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-footer > div > nav > p {
-  color: #668284;
-  font-size: 16px;
+.user-profile span {
+  font-size: 0.775rem;
+  font-weight: 600;
 }
 
-main > div > article > section > footer > p {
-  font-size: 16px;
+.user-detail {
+  margin-left: 23px;
+  white-space: nowrap;
+}
+
+.sidebar:hover .user-account {
+  background: #fff;
+  border-radius: 4px;
 }
