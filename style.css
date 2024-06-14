@@ -8,25 +8,39 @@
   font-family: "Poppins", sans-serif;
 }
 
-h1 {
+.home-section h1 {
   text-align: center;
-  font-size: 100px;
-  padding-top: 300px;
-  color: rgba(255, 255, 255, 0.493);
+  font-size: 120px;
+  padding-top: 250px;
+  color: rgb(0, 152, 163);
+  font-weight: 800;
 }
 
-h2 {
-  font-size: 80px;
+.home-section h2 {
+  font-size: 65px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.493);
+  color: rgba(0, 152, 163);
+  font-weight: 150;
+}
+
+.home-section h3 {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(0, 152, 163);
+}
+
+.about-section {
+  color: rgb(0, 152, 163);
+  text-align: center;
+  padding: 250px 200px 250px 200px;
 }
 
 body {
   min-height: 100vh;
-  background: #F0F4FF;
+  background: #000000;
   background: /* top, transparent black */
   linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), /* bottom, image */
-  url(images/jacksonville-skyline.jpg);
+  /* url(images/jacksonville-skyline.jpg); */
   background-size: cover;
 }
 
@@ -39,7 +53,7 @@ body {
   display: flex;
   overflow-x: hidden;
   flex-direction: column;
-  background: #161a2d;
+  background: #2c2c2c00;
   padding: 25px 20px;
   transition: all 0.4s ease;
 }
@@ -59,7 +73,7 @@ body {
 }
 
 .sidebar .sidebar-header h2 {
-  color: #fff;
+  color: #ffffff;
   font-size: 1.25rem;
   font-weight: 600;
   white-space: nowrap;
@@ -70,7 +84,7 @@ body {
   color: #fff;
   font-weight: 500;
   white-space: nowrap;
-  margin: 10px 0;
+  margin: 100px 0;
   position: relative;
 }
 
@@ -102,7 +116,7 @@ body {
 
 .sidebar-links {
   list-style: none;
-  margin-top: 20px;
+  margin-top: 250px;
   height: 80%;
   overflow-y: auto;
   scrollbar-width: none;
@@ -143,9 +157,9 @@ body {
 }
 
 .user-profile img {
-  width: 42px;
-  border-radius: 50%;
-  border: 2px solid #fff;
+  width: 62px;
+  /* border-radius: 50%; */
+  /* border: 2px solid #fff; */
 }
 
 .user-profile h3 {
@@ -167,3 +181,4 @@ body {
   background: #fff;
   border-radius: 4px;
 }
+
