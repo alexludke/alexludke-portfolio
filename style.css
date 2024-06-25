@@ -32,12 +32,13 @@
 .about-section {
   color: rgb(0, 152, 163);
   text-align: center;
-  padding: 250px 200px 250px 200px;
+  padding: 200px 400px 250px 400px;
+  line-height: 2.5;
 }
 
 body {
   min-height: 100vh;
-  background: #000000;
+  background: #ffffff;
   background: /* top, transparent black */
   linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), /* bottom, image */
   /* url(images/jacksonville-skyline.jpg); */
@@ -73,7 +74,7 @@ body {
 }
 
 .sidebar .sidebar-header h2 {
-  color: #ffffff;
+  color: #000000;
   font-size: 1.25rem;
   font-weight: 600;
   white-space: nowrap;
@@ -81,7 +82,7 @@ body {
 }
 
 .sidebar-links h4 {
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   white-space: nowrap;
   margin: 100px 0;
@@ -130,7 +131,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0 20px;
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   white-space: nowrap;
   padding: 15px 10px;
